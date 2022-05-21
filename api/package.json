@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build-app && node dist/index.js",
+    "build-app": "rmdir /s /q dist && npx tsc"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1"
   }

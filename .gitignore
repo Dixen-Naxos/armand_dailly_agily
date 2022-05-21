@@ -25,3 +25,4 @@ yarn-error.log*
 .idea
 front/node_modules
 api/node_modules
+api/dist
