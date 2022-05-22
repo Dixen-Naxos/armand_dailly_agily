@@ -4,15 +4,17 @@ import {useParams} from "react-router-dom";
 import Today from "./Today";
 
 
-const Forecast = async () => {
+const Forecast = () => {
     const [data, setData] = useState({});
     let {city_name} = useParams();
     const url = `http://127.0.0.1:3001/meteo/${city_name}`
-    await axios.get(url).then((response) => {
+    axios.get(url).then((response) => {
         setData(response.data)
     });
-    console.log(data["week"]);
-    return (<div><Today/></div>);
+    if (data["week"]) {
+        console.log(data["week"][0]);
+        return (<div><Today data={data["week"][0]}/></div>);
+    }
 
 }
 

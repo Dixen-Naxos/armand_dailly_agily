@@ -3,7 +3,8 @@ import {useParams} from "react-router-dom";
 import axios from "axios";
 
 const Today = (props) => {
-    return (<div>Test</div>)
+    console.log(props.data);
+    return (<div>Test </div>)
 
 }
 
