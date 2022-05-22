@@ -16,6 +16,11 @@ code {
   display:flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #030;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 main {
@@ -24,17 +29,10 @@ main {
   padding: 25px;
 }
 
-footer {
-  padding: 2px;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #EEEEEE;
-  font-size: small;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: #FFF;
 }
-
-header {
-  padding: 25px;
+h1 {
+  justify-content: center;
 }
