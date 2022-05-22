@@ -51,8 +51,16 @@ h1 {
 .day {
   background-color: #005500;
   color:white;
-  width: 40%;
+  width: 90%;
   margin: 2% auto;
   box-shadow: 0 5px 20px #999;
 
+}
+
+.black {
+  color:black;
+}
+
+img {
+  width: 10%
 }
